@@ -7,18 +7,18 @@ This is just an idea to see if I can create a generic plugin system for `cobra`
 
 There is some previous work, but all too specific to one command.
 
-- krew for kubectl
-- git plugins
-- buffalo plugins
+* [Krew for kubectl](https://krew.sigs.k8s.io/)
+* [git-extras](https://github.com/tj/git-extras)
+* [buffalo/plugins](https://github.com/gobuffalo/buffalo/tree/master/plugins)
 
 
 ## general idea
 
 All follow a similar pattern:
 
-- compose the subcomand name
-- search the binary in $PATH 
-- execute it
+  - compose the subcomand name
+  - search the binary in `$PATH` 
+  - execute it
 
 A helper package can help leverage all this boilerplate code and make it simple to discover, add and run plugins.
 
